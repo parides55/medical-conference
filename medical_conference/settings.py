@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g$hrs&*=ox$x@&bxy+j%^h4lcxkha0n5#(^o5&ft5tb3(uht0%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com', '*']
 
 
 # Application definition
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home_page',
+    'conference',
+    'about_us',
+    'contact_us',
 ]
 
 MIDDLEWARE = [
