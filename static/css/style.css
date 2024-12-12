@@ -58,6 +58,11 @@ h1 {
     background-color: transparent !important;
 }
 
+.to-center-navbar {
+    display: flex;
+    justify-content: center;
+}
+
 /* -------------------------------- Media Queries --------------------------- */
 @media (max-width: 610px) {
     #nav-div {
