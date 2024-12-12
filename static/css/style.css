@@ -64,6 +64,12 @@ h1 {
 }
 
 /* -------------------------------- Media Queries --------------------------- */
+@media (max-width: 992px) {
+    .to-center-navbar {
+        justify-content: start;
+    }
+}
+
 @media (max-width: 610px) {
     #nav-div {
         margin: 1.5rem 5rem;
