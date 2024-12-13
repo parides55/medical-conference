@@ -72,10 +72,12 @@ h1 {
     border: 1px solid #fff5ff;
     background-color: #fff5ff;
     color: #4b4a54;
-    padding: 10px;
+    padding: 10px 2px;
     margin: 1rem;
+    font-size: small;
     text-decoration: none;
     width: 200px;
+    box-shadow: 10px 10px 5px;
 }
 
 /* -------------------------------- Media Queries --------------------------- */
