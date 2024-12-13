@@ -16,6 +16,10 @@ h1 {
 }
 
 /* -------------------------------- Home page styles --------------------------- */
+#home-row-div {
+    height: 100vh;
+}
+
 #home-logo {
     height: 10rem;
 }
