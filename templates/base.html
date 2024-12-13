@@ -36,10 +36,13 @@
                         <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}" href="{% url 'home' %}">ΑΡΧΙΚΗ</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link {% if request.path == msg_from_president_url %}active" aria-current="page{% endif %}" href="{% url 'msg_from_president' %}">ΧΑΙΡΕΤΙΣΜΟΣ ΠΡΟΕΔΡΟΥ</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link {% if request.path == about_us_url %}active" aria-current="page{% endif %}" href="{% url 'about_us' %}">ΣΧΕΤΙΚΑ ΜΕ ΜΑΣ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == msg_from_president_url %}active" aria-current="page{% endif %}" href="{% url 'msg_from_president' %}">ΧΑΙΡΕΤΙΣΜΟΣ ΠΡΟΕΔΡΟΥ</a>
+                        <a class="nav-link {% if request.path == conference_info_url %}active" aria-current="page{% endif %}" href="{% url 'conference_info' %}">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == conference_schedule_url %}active" aria-current="page{% endif %}" href="{% url 'conference_schedule' %}">ΠΡΟΓΡΑΜΜΑ ΣΥΝΕΔΡΙΟΥ</a>
@@ -49,9 +52,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == sponsors_url %}active" aria-current="page{% endif %}" href="{% url 'sponsors' %}">ΧΟΡΗΓΟΙ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == conference_info_url %}active" aria-current="page{% endif %}" href="{% url 'conference_info' %}">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == contact_us_url %}active" aria-current="page{% endif %}" href="{% url 'contact_us' %}">ΕΠΙΚΟΙΝΩΝΙΑ</a>
