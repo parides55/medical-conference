@@ -2,16 +2,14 @@
 
 {% load static %}
 
-{% url 'conference' as conference_url %}
-{% url 'contact_us' as contact_us_url %}
-{% url 'home' as home_url %}
+{% url 'conference_info' as conference_info_url %}
 
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <h2>Τι κάνουμε</h2>
+    <div class="row mt-5 mt-md-0 mx-1 mx-md-0 ms-md-3 flex-column flex-md-row  justify-content-center">
+        <div class="col col-md-5 d-flex flex-column justify-content-center">
+            <h2 class="mb-3">Τι κάνουμε</h2>
             <p>
                 Ο Σύλλογος Γονέων και Φίλων Παιδιών με Καρδιοπάθεια είναι ένας Φιλανθρωπικός Μη 
                 Κερδοσκοπικός Σύλλογος που παρέχει στήριξη, βοήθεια και εκπαιδευτικές υπηρεσίες 
@@ -23,15 +21,21 @@
                 συνεργασία με διάφορους φορείς με τελικό στόχο τη βελτίωση της ποιότητας ζωής των 
                 ατόμων με Συγγενείς Καρδιοπάθειες, εκδηλώσεις, κ.λπ.
             </p>
-            <div>
-                <a class="cta-about-us" href="#">ΕΠΙΣΚΕΦΘΗΤΕ ΤΗ ΣΕΛΙΔΑ ΜΑΣ</a>
-                <a class="cta-about-us" href="#">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
-            </div>
         </div>
-        <div class="col">
-            <img src="{% static 'images/40_years_logo_new_500px.png' %}" alt="Logo for 40 years anniversary">
+        <div class="col col-md-5 text-center">
+            <img src="{% static 'images/40_years_logo_new_400px.png' %}" alt="Logo for 40 years anniversary">
+        </div>
+    </div>
+    <div class="row mx-1 mx-md-0 ms-md-3">
+        <div class="col d-flex justify-content-center">
+            <a class="btn btn-light cta-about-us" href="https://cardiac-association-851857e342e8.herokuapp.com/" target=_blank>ΕΠΙΣΚΕΦΘΗΤΕ ΤΗ ΣΕΛΙΔΑ ΜΑΣ</a>
+            <a class="btn btn-light cta-about-us" href="{% url 'conference_info' %}">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
         </div>
     </div>
 </div>
 
+{% endblock content %}
+
+{% block forJS %}
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
