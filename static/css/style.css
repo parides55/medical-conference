@@ -63,6 +63,10 @@ h1 {
     justify-content: center;
 }
 
+.active {
+    font-weight: bold;
+}
+
 /* -------------------------------- About Us styles --------------------------- */
 .cta-about-us {
     border: 1px solid #fff5ff;
