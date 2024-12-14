@@ -80,6 +80,15 @@ h1 {
     box-shadow: 10px 10px 5px;
 }
 
+/* -------------------------------- Contact Us styles --------------------------- */
+#contact-us-row {
+    height: 100vh;
+}
+
+.contact-us-images {
+    height: 5rem;
+}
+
 /* -------------------------------- Media Queries --------------------------- */
 @media (max-width: 992px) {
     .to-center-navbar {
