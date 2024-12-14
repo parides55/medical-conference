@@ -80,6 +80,13 @@ h1 {
     box-shadow: 10px 10px 5px;
 }
 
+/* -------------------------------- Speakers styles --------------------------- */
+.speakers-card {
+    max-width: 540px;
+    background-color: transparent;
+    border: none;
+}
+
 /* -------------------------------- Contact Us styles --------------------------- */
 #contact-us-row {
     height: 100vh;

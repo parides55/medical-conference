@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Speaker
 
 # Create your views here.
 def conference_info(request):
@@ -10,7 +11,14 @@ def conference_schedule(request):
 
 
 def speakers(request):
-    return render(request, 'conference/speakers.html')
+    
+    speakers = Speaker.objects.all()
+    
+    context = {
+        'speakers': speakers
+    }
+    
+    return render(request, 'conference/speakers.html', context)
 
 
 def sponsors(request):
