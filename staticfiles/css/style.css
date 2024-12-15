@@ -87,6 +87,10 @@ h1 {
     border: none;
 }
 
+.card-title, .card-text {
+    color: #272437;
+}
+
 /* -------------------------------- Contact Us styles --------------------------- */
 #contact-us-row {
     height: 100vh;

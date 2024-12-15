@@ -10,26 +10,30 @@
 
 <div class="container-fluid">
     <div class="row justify-content-around">
-        {% for speaker in speakers %}
-        <div class="card m-4 speakers-card">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    {% if 'placeholder' in speaker.photo.url %}
-                    <img src="{% static 'images/default_speaker_image.png' %}" class="img-fluid rounded-start" alt="Default Image for Speaker">
-                    {% else %}
-                    <img src="{{ speaker.photo.url }}" class="img-fluid rounded-start" alt="Image of {{ speaker.name }}">
-                    {% endif %}
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ speaker.name }}</h5>
-                        <p class="card-text"><small class="text-body-secondary">{{ speaker.title }}</small></p>
-                        <div class="card-text">{{ speaker.bio | safe }}</div>
+        {% if speakers %}
+            {% for speaker in speakers %}
+            <div class="card m-4 speakers-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        {% if 'placeholder' in speaker.photo.url %}
+                        <img src="{% static 'images/default_speaker_image_neutral.png' %}" class="img-fluid rounded-start" alt="Default Image for Speaker">
+                        {% else %}
+                        <img src="{{ speaker.photo.url }}" class="img-fluid rounded-start" alt="Image of {{ speaker.name }}">
+                        {% endif %}
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ speaker.name }}</h5>
+                            <p class="card-text"><small class="text-body-secondary">{{ speaker.title }}</small></p>
+                            <div class="card-text">{{ speaker.bio | safe }}</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        {% endfor %}
+            {% endfor %}
+        {% else %}
+            <h1 class="mt-5 fst-italic">Οι Ομιλητές του συνεδρίου<br> θα ανακοινωθούν <br>σύντομα...</h1>
+        {% endif %}
     </div>
 </div>
 
