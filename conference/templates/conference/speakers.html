@@ -2,9 +2,9 @@
 
 {% load static %}
 
-{% url 'about_us' as about_us_url %}
-{% url 'contact_us' as contact_us_url %}
-{% url 'home' as home_url %}
+{% url 'conference_info' as conference_info_url %}
+{% url 'conference_schedule' as conference_schedule_url %}
+{% url 'registration' as registration_url %}
 
 {% block content %}
 
@@ -34,6 +34,13 @@
         {% else %}
             <h1 class="mt-5 fst-italic">Οι Ομιλητές του συνεδρίου<br> θα ανακοινωθούν <br>σύντομα...</h1>
         {% endif %}
+    </div>
+    <div class="row">
+        <div class="col d-flex flex-column  justify-content-around my-5">
+            <a href="{% url 'conference_info' %}" class="btn btn-light cta-btn">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
+            <a href="{% url 'conference_schedule' %}" class="btn btn-light cta-btn">ΠΡΟΓΡΑΜΜΑ ΣΥΝΕΔΡΙΟΥ</a>
+            <a href="{% url 'registration' %}" class="btn btn-light cta-btn">ΕΓΓΡΑΦΗ ΣΤΟ ΣΥΝΕΔΡΙΟ</a>
+        </div>
     </div>
 </div>
 
