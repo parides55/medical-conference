@@ -8,10 +8,12 @@
 
 {% block content %}
 
+
 <div class="container-fluid">
+    {% if speakers %}
+    <h1 class="my-5">Γνωρίστε τους Ομιλητές</h1>
     <div class="row justify-content-around">
-        {% if speakers %}
-            {% for speaker in speakers %}
+        {% for speaker in speakers %}
             <div class="card m-4 speakers-card">
                 <div class="row g-0">
                     <div class="col-md-4">
@@ -30,13 +32,13 @@
                     </div>
                 </div>
             </div>
-            {% endfor %}
-        {% else %}
-            <h1 class="mt-5 fst-italic">Οι Ομιλητές του συνεδρίου<br> θα ανακοινωθούν <br>σύντομα...</h1>
-        {% endif %}
+        {% endfor %}
     </div>
+    {% else %}
+        <h1 class="mt-5 fst-italic">Οι Ομιλητές του συνεδρίου<br> θα ανακοινωθούν <br>σύντομα...</h1>
+    {% endif %}
     <div class="row">
-        <div class="col d-flex flex-column  justify-content-around my-5">
+        <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
             <a href="{% url 'conference_info' %}" class="btn btn-light cta-btn">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
             <a href="{% url 'conference_schedule' %}" class="btn btn-light cta-btn">ΠΡΟΓΡΑΜΜΑ ΣΥΝΕΔΡΙΟΥ</a>
             <a href="{% url 'registration' %}" class="btn btn-light cta-btn">ΕΓΓΡΑΦΗ ΣΤΟ ΣΥΝΕΔΡΙΟ</a>
