@@ -2,12 +2,45 @@
 
 {% load static %}
 
-{% url 'conference' as conference_url %}
-{% url 'about_us' as about_us_url %}
-{% url 'home' as home_url %}
+{% url 'conference_info' as conference_info_url %}
+{% url 'conference_schedule' as conference_schedule_url %}
+{% url 'registration' as registration_url %}
+{% url 'contact_us' as contact_us_url %}
 
 {% block content %}
 
-<h1>MESSAGE FROM PRESIDENT</h1>
+<div class="container-fluid">
+    <div class="row mt-5 mt-md-0 mx-1 mx-md-0 ms-md-3 flex-column flex-md-row  justify-content-center">
+        <div class="col col-md-5 d-flex flex-column justify-content-center">
+            <h2 class="mb-3">Χαιρετισμός Προέδρου</h2>
+            <p>
+                Ο Σύλλογος Γονέων και Φίλων Παιδιών με Καρδιοπάθεια είναι ένας Φιλανθρωπικός Μη 
+                Κερδοσκοπικός Σύλλογος που παρέχει στήριξη, βοήθεια και εκπαιδευτικές υπηρεσίες 
+                σε όλα τα άτομα με Συγγενείς Καρδιοπάθειες και τις οικογένειές τους. Ιδρύθηκε το 1985.
+            </p>
+            <p>
+                Οργανώνει διάφορες δράσεις όπως ενημέρωση του κοινού για τις Συγγενείς Καρδιοπάθειες, 
+                διαλέξεις με καλεσμένους ιατρούς από Κύπρο και εξωτερικό, εργαστήρια, προγράμματα σε 
+                συνεργασία με διάφορους φορείς με τελικό στόχο τη βελτίωση της ποιότητας ζωής των 
+                ατόμων με Συγγενείς Καρδιοπάθειες, εκδηλώσεις, κ.λπ.
+            </p>
+        </div>
+        <div class="col col-md-5 text-center" style="height: 400px;"></div>
+    </div>
+    <div class="row mx-1 mx-md-0 ms-md-3">
+        <div class="col col-md-6 d-flex justify-content-center">
+            <a class="btn btn-light cta-btn" href="{% url 'conference_info' %}">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
+            <a class="btn btn-light cta-btn" href="{% url 'conference_schedule' %}">ΠΡΟΓΡΑΜΜΑ ΣΥΝΕΔΡΙΟΥ</a>
+        </div>
+        <div class="col col-md-6 d-flex justify-content-center">
+            <a class="btn btn-light cta-btn" href="{% url 'registration' %}">ΕΓΓΡΑΦΗ ΣΤΟ ΣΥΝΕΔΡΙΟ</a>
+            <a class="btn btn-light cta-btn" href="{% url 'contact_us' %}">ΕΠΙΚΟΙΝΩΝΙΣΤΕ ΜΑΖΙ ΜΑΣ</a>
+        </div>
+    </div>
+</div>
 
+{% endblock content %}
+
+{% block forJS %}
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
