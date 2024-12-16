@@ -108,10 +108,16 @@ h1 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #contact-us-row {
         display: flex;
         flex-direction: column;
+    }
+
+    #location {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 }
 
