@@ -112,6 +112,7 @@ h1 {
     #contact-us-row {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     #location {
