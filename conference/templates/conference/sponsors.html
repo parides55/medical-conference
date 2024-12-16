@@ -8,6 +8,42 @@
 
 {% block content %}
 
-<h1>SPONSORS</h1>
+<section id="sponsors-intro">
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-4">
+            <div class="col-9">
+                <h1 class="my-5">Παρουσιάζουμε τους Χορηγούς μας</h1>
+                <p claass="my-5">
+                    Έχουμε την τιμή να παρουσιάσουμε τους αξιότιμους χορηγούς του Ιατρικού μας Συνεδρίου, 
+                    των οποίων η γενναιόδωρη υποστήριξη και η δέσμευσή τους για την προώθηση της παιδιατρικής 
+                    και της υγείας της καρδιάς καθιστούν δυνατή αυτή την εκδήλωση.<br><br> Η συνεισφορά τους μας 
+                    βοηθά να φέρουμε κοντά κορυφαίους επαγγελματίες υγείας, να προωθήσουμε την ανταλλαγή 
+                    γνώσεων και να προωθήσουμε καινοτόμες λύσεις για παιδιά με καρδιακές παθήσεις. Ελάτε 
+                    να εκφράσουμε την ευγνωμοσύνη μας σε αυτούς τους αφοσιωμένους συνεργάτες.
+                </p>
+            </div>
+        </div>
+        <div class="row text-center my-5">
+            <div class="col col-md-6 d-flex justify-content-end">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/aek_logo.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Με τη Συνεργασία της Αναισθησιολογικής Εταιρείας Κύπρου</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-6 d-flex justify-content-start">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/health_ministry_logo.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Υπό την αιγίδα του Υπουργού Υγείας Κύπρου Μιχάλη Δαμιανού</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 {% endblock %}
