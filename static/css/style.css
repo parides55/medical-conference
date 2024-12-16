@@ -98,12 +98,20 @@ h1 {
 
 .contact-us-images {
     height: 5rem;
+    width: fit-content;
 }
 
 /* -------------------------------- Media Queries --------------------------- */
 @media (max-width: 992px) {
     .to-center-navbar {
         justify-content: start;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact-us-row {
+        display: flex;
+        flex-direction: column;
     }
 }
 

@@ -9,9 +9,13 @@
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row d-flex flex-column flex-md-row align-items-center" id="contact-us-row">
+    <div class="row d-flex flex-column flex-lg-row align-items-center" id="contact-us-row">
         <div class="col col-md-5">
             <img class="contact-us-images mb-5" src="{% static 'images/associations_logo.png' %}" alt="Cardiac Association's Logo">
+            <p>
+                Σύνδεσμος Γονέων και Φίλων<br>
+                Καρδιοπαθών Παιδιών<br>
+            </p>
             <p>
                 Οδός Γράμμου 11, Διαμέρισμα 5,<br>
                 Στρόβολος, Λευκωσία<br>
@@ -20,18 +24,26 @@
             <a href="tel:+35722315196">Τηλ: 22315196</a><br>
             <a href="mailto:pediheart@cytanet.com.cy?subject=Inquiry&amp;body=Hello">Email: pediheart@cytanet.com.cy</a>
         </div>
-        <div class="col col-md-7 d-flex flex-column flex-md-row align-items-center">
-            <div class="col-6 mx-2">
-                <p>
-                    MK Premium<br>
-                    Ρήγα Φεραίου & Ανδρέα Ζάκου, Christina Center<br>
-                    T.K. 58256, 3732, Λεμεσός, Κύπρος<br>
-                    Τηλ: <a href="tel:+35799812240">+357 99812240</a>, <br><a href="tel:302310226250">+30 2310 226 250</a><br>
-                    <a href="mailto:pediheart@cytanet.com.cy?subject=Medical Conference"> e-mail: info@mk-premium.com</a>
-                </p>
+        <div class="col col-md-7 d-flex flex-column">
+            <div class="row my-5">
+                <div class="col">
+                    <h5>Η <strong>MK Premium</strong> λειτουργεί με υπερηφάνεια ως η επίσημη γραμματεία για το ιατρικό συνέδριο του οργανισμού μας.</h5>
+                </div>
             </div>
-            <div class="col-6 mx-2">
-                <a class="contact-us-images" href="https://mk-premium.com/el/%ce%b1%cf%81%cf%87%ce%b9%ce%ba%ce%b7/" target=_blank><img class="contact-us-images" src="{% static 'images/mk_premium_logo.png' %}" alt="MK Premium Logo"></a>
+            <div class="row mt-5">
+                <div class="col mx-2 d-flex flex-column flex-lg-row">
+                    <p>
+                        MK Premium<br>
+                        Ρήγα Φεραίου & Ανδρέα Ζάκου, Christina Center<br>
+                        T.K. 58256, 3732, Λεμεσός, Κύπρος<br>
+                        Τηλ: <a href="tel:+35799812240">+357 99812240</a>, <br><a href="tel:302310226250">+30 2310 226 250</a><br>
+                    </p>
+                    <div class="mx-3">
+                        <a href="mailto:pediheart@cytanet.com.cy?subject=Medical Conference">info@mk-premium.com</a>
+                        <a href="https://mk-premium.com/el/%ce%b1%cf%81%cf%87%ce%b9%ce%ba%ce%b7/" target=_blank>www.mk-premium.com</a>
+                    </div>
+                    <img class="contact-us-images" src="{% static 'images/mk_premium_logo.png' %}" alt="MK Premium Logo">
+                </div>
             </div>
         </div>
     </div>
