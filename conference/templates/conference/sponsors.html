@@ -2,10 +2,6 @@
 
 {% load static %}
 
-{% url 'about_us' as about_us_url %}
-{% url 'contact_us' as contact_us_url %}
-{% url 'home' as home_url %}
-
 {% block content %}
 
 <section id="sponsors-intro">
@@ -24,19 +20,19 @@
             </div>
         </div>
         <div class="row text-center my-5">
-            <div class="col col-md-6 d-flex justify-content-end">
+            <div class="col col-md-6 mb-5 mb-md-0 d-flex justify-content-center justify-content-md-end">
                 <div class="card" style="width: 18rem;">
                     <img src="{% static 'images/aek_logo.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Με τη Συνεργασία της Αναισθησιολογικής Εταιρείας Κύπρου</p>
+                        <p class="card-text"><strong>Με τη Συνεργασία της Αναισθησιολογικής Εταιρείας Κύπρου</strong></p>
                     </div>
                 </div>
             </div>
-            <div class="col col-md-6 d-flex justify-content-start">
+            <div class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center justify-content-md-start">
                 <div class="card" style="width: 18rem;">
                     <img src="{% static 'images/health_ministry_logo.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Υπό την αιγίδα του Υπουργού Υγείας Κύπρου Μιχάλη Δαμιανού</p>
+                        <p class="card-text"><strong>Υπό την αιγίδα του Υπουργού Υγείας Κύπρου Μιχάλη Δαμιανού</strong></p>
                     </div>
                 </div>
             </div>
