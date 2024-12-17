@@ -6,9 +6,9 @@
 
 {% block content %}
 
-<div class="container-fluid animate__animated animate__fadeInDown animate_slower">
+<div class="container-fluid">
     <div class="row mt-5 mt-md-0 mx-1 mx-md-0 ms-md-3 flex-column flex-md-row  justify-content-center">
-        <div class="col col-md-5 d-flex flex-column justify-content-center">
+        <div class="col col-md-5 d-flex flex-column justify-content-center animate__animated animate__fadeInDown animate__slow">
             <h2 class="mb-3">Τι κάνουμε</h2>
             <p>
                 Ο Σύλλογος Γονέων και Φίλων Παιδιών με Καρδιοπάθεια είναι ένας Φιλανθρωπικός Μη 
@@ -22,11 +22,11 @@
                 ατόμων με Συγγενείς Καρδιοπάθειες, εκδηλώσεις, κ.λπ.
             </p>
         </div>
-        <div class="col col-md-5 text-center">
+        <div class="col col-md-5 text-center animate__animated animate__fadeInDown animate__slower animate__delay-1s">
             <img src="{% static 'images/40_years_logo_new_400px.png' %}" alt="Logo for 40 years anniversary">
         </div>
     </div>
-    <div class="row mx-1 mx-md-0 ms-md-3">
+    <div class="row mx-1 mx-md-0 ms-md-3 animate__animated animate__fadeInUp animate__slower animate__delay-2s">
         <div class="col col-md-6 d-flex justify-content-center">
             <a class="btn btn-light cta-btn" href="https://cardiac-association-851857e342e8.herokuapp.com/" target=_blank>ΕΠΙΣΚΕΦΘΗΤΕ ΤΗ ΣΕΛΙΔΑ ΜΑΣ</a>
             <a class="btn btn-light cta-btn" href="{% url 'conference_info' %}">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
