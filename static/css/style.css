@@ -80,6 +80,18 @@ h1 {
 
 /* -------------------------------- About Us styles --------------------------- */
 
+/* -------------------------------- Conference Info styles --------------------------- */
+.accordion-item {
+    color: #4b4a54;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#accordionPanelsStayOpenExample {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
 /* -------------------------------- Speakers styles --------------------------- */
 .speakers-card {
     max-width: 540px;
@@ -119,6 +131,16 @@ h1 {
         display: flex;
         flex-direction: column;
         align-content: center;
+    }
+
+    #accordionPanelsStayOpenExample {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    iframe {
+        width: 300px;
+        padding-right: 25px;
     }
 }
 
