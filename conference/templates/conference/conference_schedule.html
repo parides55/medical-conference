@@ -2,12 +2,23 @@
 
 {% load static %}
 
+{% url 'speakers' as speakers_url %}
+{% url 'sponsors' as sponsors_url %}
+{% url 'registration' as registration_url %}
+
 {% block content %}
 
 <div class="container-fluid animate__animated animate__zoomIn animate__slower">
     <div class="row align-content-center justify-content-center" style="height: 100vh;">
         <div class="col-6">
             <h1>Το πρόγραμμα του συνεδρίου θα ανακοινωθεί σύντομα</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
+            <a href="{% url 'speakers' %}" class="btn btn-light cta-btn">ΟΜΙΛΗΤΕΣ ΣΥΝΕΔΡΙΟΥ</a>
+            <a href="{% url 'sponsors' %}" class="btn btn-light cta-btn">ΧΟΡΗΓΟΙ ΚΑΙ ΥΠΟΣΤΗΡΙΚΤΕΣ</a>
+            <a href="{% url 'registration' %}" class="btn btn-light cta-btn">ΕΓΓΡΑΦΗ ΣΤΟ ΣΥΝΕΔΡΙΟ</a>
         </div>
     </div>
 </div>
