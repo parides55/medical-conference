@@ -13,7 +13,21 @@
     <div class="row">
         <div class="col">
             <h2 class="my-5 text-center">Χαιρετισμός Προέδρου</h2>
-            <div class="mx-4 my-2">{{ message.message | safe }}</div>
+            <div class="mx-4 my-2">
+                {if message.status == 1}
+                {{ message.message | safe }}
+                {endif}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2 class="my-5 text-center">Χαιρετισμός Προέδρου Ιατρικού Συνδέσμου & Οργανωτικής Επιτροπής</h2>
+            <div class="mx-4 my-2">
+                {if message.status == 2}
+                {{ message.message | safe }}
+                {endif}
+            </div>
         </div>
     </div>
 </div>
