@@ -6,5 +6,5 @@ from .models import PresidentMessage
 @admin.register(PresidentMessage)
 class PresidentMessageAdmin(SummernoteModelAdmin):
 
-    list_display = ('title',)
+    list_display = ('title', 'is_active')
     summernote_fields = ('message',)
