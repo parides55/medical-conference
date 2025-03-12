@@ -9,8 +9,8 @@ def about_us(request):
 def msg_from_president(request):
 
     try:
-        message = PresidentMessage.objects.get(is_active=True)
+        messages = PresidentMessage.objects.get(is_active=True)
     except PresidentMessage.DoesNotExist:
-        message = None
+        messages = None
     
-    return render(request, 'about_us/msg_from_president.html', {'message': message})
+    return render(request, 'about_us/msg_from_president.html', {'messages': messages})
