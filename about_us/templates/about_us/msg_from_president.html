@@ -10,12 +10,10 @@
 {% block content %}
 
 <div class="container-fluid animate__animated animate__fadeInDown animate__slower">
-    <div class="row mt-5 mt-md-0 mx-1 mx-md-0 ms-md-3 flex-column flex-md-row  justify-content-center">
-        <div class="col col-md-5 d-flex flex-column justify-content-center">
-            <h2 class="mb-3">Χαιρετισμός Προέδρου</h2>
-        </div>
-        <div class="col col-md-5 text-center" style="height: 400px;">
-            {{ message.message | safe }}
+    <div class="row">
+        <div class="col">
+            <h2 class="my-5 text-center">Χαιρετισμός Προέδρου</h2>
+            <div class="mx-4 my-2">{{ message.message | safe }}</div>
         </div>
     </div>
 </div>
