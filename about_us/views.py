@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import PresidentMessage
 
 # Create your views here.
 def about_us(request):
@@ -6,4 +7,10 @@ def about_us(request):
 
 
 def msg_from_president(request):
-    return render(request, 'about_us/msg_from_president.html')
+
+    try:
+        message = PresidentMessage.objects.get(is_active=True)
+    except PresidentMessage.DoesNotExist:
+        message = None
+    
+    return render(request, 'about_us/msg_from_president.html', {'message': message})
