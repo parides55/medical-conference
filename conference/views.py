@@ -39,13 +39,3 @@ def speakers(request):
     except Exception as e:
         messages.error(request, f"The following error occurred: {str(e)}")
         return redirect('speakers')
-        
-
-
-def sponsors(request):
-    try:
-        return render(request, 'conference/sponsors.html')
-
-    except Exception as e:
-        messages.error(request, f"The following error occurred: {str(e)}")
-        return redirect('sponsors')

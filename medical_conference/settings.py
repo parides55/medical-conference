@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'conference',
     'about_us',
     'contact_us',
+    'sponsors',
 ]
 
 MIDDLEWARE = [
