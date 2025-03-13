@@ -3,9 +3,8 @@
 {% load static %}
 
 {% url 'conference_info' as conference_info_url %}
-{% url 'conference_schedule' as conference_schedule_url %}
-{% url 'registration' as registration_url %}
-{% url 'contact_us' as contact_us_url %}
+{% url 'sponsors' as sponsors_url %}
+{% url 'about_us' as about_us_url %}
 
 {% block content %}
 
@@ -32,6 +31,13 @@
                 {{ message.message | safe }}
                 {%endif%}
                 {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
+                <a href="{% url 'about_us' %}" class="btn btn-light cta-btn">ΣΧΕΤΙΚΑ ΜΕ ΜΑΣ</a>
+                <a href="{% url 'conference_info' %}" class="btn btn-light cta-btn">ΠΛΗΡΟΦΟΡΙΕΣ ΣΥΝΕΔΡΙΟΥ</a>
+                <a href="{% url 'sponsors' %}" class="btn btn-light cta-btn">ΧΟΡΗΓΟΙ ΚΑΙ ΥΠΟΣΤΗΡΙΚΤΕΣ</a>
             </div>
         </div>
     </div>
