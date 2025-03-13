@@ -10,23 +10,28 @@
 {% block content %}
 
 <div class="container-fluid animate__animated animate__fadeInDown animate__slower">
-    <div class="row">
+    <div class="row mb-5">
         <div class="col">
             <h2 class="my-5 text-center">Χαιρετισμός Προέδρου</h2>
             <div class="mx-4 my-2">
-                {if message.status == 1}
+                {% for message in messages %}
+                {%if message.status == 1%}
                 {{ message.message | safe }}
-                {endif}
+                {%endif%}
+                {% endfor %}
             </div>
         </div>
     </div>
-    <div class="row">
+    <hr class="mx-4 opacity-100">
+    <div class="row mt-5">
         <div class="col">
             <h2 class="my-5 text-center">Χαιρετισμός Προέδρου Ιατρικού Συνδέσμου & Οργανωτικής Επιτροπής</h2>
             <div class="mx-4 my-2">
-                {if message.status == 2}
+                {% for message in messages %}
+                {%if message.status == 2%}
                 {{ message.message | safe }}
-                {endif}
+                {%endif%}
+                {% endfor %}
             </div>
         </div>
     </div>
