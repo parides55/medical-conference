@@ -4,7 +4,7 @@
 
 {% url 'speakers' as speakers_url %}
 {% url 'conference_schedule' as conference_schedule_url %}
-{% url 'registration' as registration_url %}
+{% url 'contact_us' as contact_us_url %}
 
 {% block content %}
 
@@ -118,7 +118,7 @@
         <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
             <a href="{% url 'conference_schedule' %}" class="btn btn-light cta-btn">ΠΡΟΓΡΑΜΜΑ ΣΥΝΕΔΡΙΟΥ</a>
             <a href="{% url 'speakers' %}" class="btn btn-light cta-btn">ΟΜΙΛΗΤΕΣ ΣΥΝΕΔΡΙΟΥ</a>
-            <a href="https://registrations.oracleartvision.gr/registration-form-medical-conference-of-the-association-of-parents-friends-of-children-with-heart-disease/ " target=_blank class="btn btn-light cta-btn">ΕΓΓΡΑΦΗ ΣΤΟ ΣΥΝΕΔΡΙΟ</a>
+            <a href="{% url 'contact_us' %}" class="btn btn-light cta-btn">ΕΠΙΚΟΙΝΩΝΙΑ</a>
         </div>
     </div>
 </div>
