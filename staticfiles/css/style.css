@@ -113,6 +113,26 @@ section {
     border: none;
 }
 
+#card-1 {
+    background-color: #acc6e6;
+    color: #4b4a54;
+}
+
+#card-2 {
+    background-color: #ffeb9c;
+    color: #4b4a54;
+}
+
+#card-3 {
+    background-color: #ffd7e2;
+    color: #4b4a54;
+}
+
+#card-4 {
+    background-color: #b4fade;
+    color: #4b4a54;
+}
+
 /* -------------------------------- Contact Us styles --------------------------- */
 #contact-us-row {
     height: 100vh;
