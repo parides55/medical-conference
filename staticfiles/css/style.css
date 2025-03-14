@@ -26,6 +26,10 @@ h1 {
     box-shadow: 10px 10px 5px;
 }
 
+section {
+    margin: 2rem 0;
+}
+
 /* -------------------------------- Home page styles --------------------------- */
 #home-row-div {
     height: 100vh;
