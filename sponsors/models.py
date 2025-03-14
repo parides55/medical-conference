@@ -5,10 +5,10 @@ from cloudinary.models import CloudinaryField
 class Sponsor(models.Model):
     
     STATUS = (
-        ('Platinum', 'Platinum'),
-        ('Gold', 'Gold'),
-        ('Silver', 'Silver'),
-        ('Other', 'Other'),
+        (1, 'Platinum'),
+        (2, 'Gold'),
+        (3, 'Silver'),
+        (4, 'Other'),
     )
     
     name = models.CharField(max_length=200)
@@ -18,4 +18,4 @@ class Sponsor(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'{self.name} - {self.is_active}'
+        return f'{self.name} - Is active : {self.is_active}'
