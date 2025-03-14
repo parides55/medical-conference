@@ -8,22 +8,27 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row my-5 justify-content-center mt-4 animate__animated animate__zoomIn animate__slow">
-        <div class="col-9">
-            <h1 class="my-5">Πληροφορίες Συνεδρίου</h1>
-            <p claass="my-5">
-                Σας προσκαλούμε θερμά να συμμετάσχετε στο Ιατρικό Συνέδριό μας, το οποίο 
-                θα πραγματοποιηθεί στις <strong>26 και 27 Απριλίου 2025 στο Mediterranean Beach Hotel, 
-                στη Λεμεσό</strong>. Αυτή η σημαντική εκδήλωση θα φέρει κοντά κορυφαίους γιατρούς, ερευνητές 
-                και επαγγελματίες υγείας για να μοιραστούν γνώσεις και να εξερευνήσουν τις 
-                εξελίξεις στην παιδιατρική καρδιολογία. <br><br>Ελάτε μαζί μας για δύο ημέρες γεμάτες 
-                εποικοδομητικές συζητήσεις, κεντρικές ομιλίες και πολύτιμες ευκαιρίες δικτύωσης 
-                σε ένα πανέμορφο παραθαλάσσιο περιβάλλον. Η εξειδίκευση και η συμβολή σας θα παίξουν 
-                καθοριστικό ρόλο στην επιτυχία αυτού του συνεδρίου. Ανυπομονούμε να σας καλωσορίσουμε!
-            </p>
+<section id="conference-intro">
+    <div class="container-fluid">
+        <div class="row my-5 justify-content-center mt-4 animate__animated animate__zoomIn animate__slow">
+            <div class="col-9">
+                <h1 class="my-5">Πληροφορίες Συνεδρίου</h1>
+                <p claass="my-5">
+                    Σας προσκαλούμε θερμά να συμμετάσχετε στο Ιατρικό Συνέδριό μας, το οποίο 
+                    θα πραγματοποιηθεί στις <strong>26 και 27 Απριλίου 2025 στο Mediterranean Beach Hotel, 
+                    στη Λεμεσό</strong>. Αυτή η σημαντική εκδήλωση θα φέρει κοντά κορυφαίους γιατρούς, ερευνητές 
+                    και επαγγελματίες υγείας για να μοιραστούν γνώσεις και να εξερευνήσουν τις 
+                    εξελίξεις στην παιδιατρική καρδιολογία. <br><br>Ελάτε μαζί μας για δύο ημέρες γεμάτες 
+                    εποικοδομητικές συζητήσεις, κεντρικές ομιλίες και πολύτιμες ευκαιρίες δικτύωσης 
+                    σε ένα πανέμορφο παραθαλάσσιο περιβάλλον. Η εξειδίκευση και η συμβολή σας θα παίξουν 
+                    καθοριστικό ρόλο στην επιτυχία αυτού του συνεδρίου. Ανυπομονούμε να σας καλωσορίσουμε!
+                </p>
+            </div>
         </div>
     </div>
+</section>
+
+<section id="main-info">
     <div class="row my-5 animate__animated animate__fadeInUp animate__slower animate__delay-1s" id="location">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
@@ -96,10 +101,61 @@
                         <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
                             <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
                             <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
-                        </svg> Γραμματεία Οργάνωσης Συνεδρίου
+                        </svg> Οργανωτική Επιτροπή
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body d-flex flex-column justify-content-center flex-md-row">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <h4 class="text-center">
+                                Πρόεδρος:<br>
+                                <strong>Στέλλα Ελευθεριάδου</strong><br><br>
+                                Μέλη:<br>
+                                <strong>Νεοκλής Παρίδης</strong><br>
+                                <strong>Αντιγόνη Ποντικού</strong>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                        </svg> Επιστημονική Επιτροπή
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body d-flex flex-column justify-content-center flex-md-row">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <h4 class="text-center">
+                                Πρόεδρος:<br>
+                                <strong>Ιωάννης Τζανάβαρος</strong><br><br>
+                                Μέλη:<br>
+                                <strong>Αντώνης Ιωσήφ</strong><br>
+                                <strong>Βάσω Καδή</strong><br>
+                                <strong>Αργύρης Κυθρεώτης</strong><br>
+                                <strong>Μαργαρίτα Μπαρτσώτα</strong><br>
+                                <strong>Αντιγόνη Ποντικού</strong><br>
+                                <strong>Αντρέας Ρουσουνίδης</strong><br>
+                                <strong>Θάνος Τσιρέλης</strong><br>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                        </svg> Γραμματεία Οργάνωσης Συνεδρίου
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
                     <div class="accordion-body d-flex flex-column justify-content-center flex-md-row">
                         <div class="col d-flex justify-content-center align-items-center">
                             <h4 class="text-center">
@@ -114,13 +170,19 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
-            <a href="{% url 'conference_schedule' %}" class="btn btn-light cta-btn">ΠΡΟΓΡΑΜΜΑ ΣΥΝΕΔΡΙΟΥ</a>
-            <a href="{% url 'speakers' %}" class="btn btn-light cta-btn">ΟΜΙΛΗΤΕΣ ΣΥΝΕΔΡΙΟΥ</a>
-            <a href="{% url 'contact_us' %}" class="btn btn-light cta-btn">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+</div>
+</section>
+
+<section id="cta-links">
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
+                <a href="{% url 'conference_schedule' %}" class="btn btn-light cta-btn">ΠΡΟΓΡΑΜΜΑ ΣΥΝΕΔΡΙΟΥ</a>
+                <a href="{% url 'speakers' %}" class="btn btn-light cta-btn">ΟΜΙΛΗΤΕΣ ΣΥΝΕΔΡΙΟΥ</a>
+                <a href="{% url 'contact_us' %}" class="btn btn-light cta-btn">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 {% endblock %}
