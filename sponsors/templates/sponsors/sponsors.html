@@ -32,15 +32,15 @@
         </div>
         <div class="row justify-content-around">
             {% for sponsor in sponsors %}
+            {% if sponsor.status == 1 %}
             <div class="card sponsors-cards" style="width: 18rem;">
-                {% if sponsor.status == 1 %}
-                    {% if 'placeholder' in sponsor.logo.url %}
-                    <p class="card-text">{{sponsor.name}}</p>
-                    {% else %}
-                    <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
-                    {% endif %}
+                {% if 'placeholder' in sponsor.logo.url %}
+                <p class="card-text">{{sponsor.name}}</p>
+                {% else %}
+                <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
                 {% endif %}
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -56,15 +56,15 @@
         </div>
         <div class="row">
             {% for sponsor in sponsors %}
+            {% if sponsor.status == 2 %}
             <div class="card sponsors-cards" style="width: 18rem;">
-                {% if sponsor.status == 2 %}
-                    {% if 'placeholder' in sponsor.logo.url %}
-                    <p class="card-text">{{sponsor.name}}</p>
-                    {% else %}
-                    <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
-                    {% endif %}
+                {% if 'placeholder' in sponsor.logo.url %}
+                <p class="card-text">{{sponsor.name}}</p>
+                {% else %}
+                <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
                 {% endif %}
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -79,15 +79,15 @@
         </div>
         <div class="row justify-content-around">
             {% for sponsor in sponsors %}
+            {% if sponsor.status == 3 %}
             <div class="card sponsors-cards" style="width: 18rem;">
-                {% if sponsor.status == 3 %}
-                    {% if 'placeholder' in sponsor.logo.url %}
-                    <p class="card-text">{{sponsor.name}}</p>
-                    {% else %}
-                    <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
-                    {% endif %}
+                {% if 'placeholder' in sponsor.logo.url %}
+                <p class="card-text">{{sponsor.name}}</p>
+                {% else %}
+                <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
                 {% endif %}
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -102,15 +102,15 @@
         </div>
         <div class="row justify-content-around">
             {% for sponsor in sponsors %}
+            {% if sponsor.status == 4 %}
             <div class="card sponsors-cards" style="width: 18rem;">
-                {% if sponsor.status == 4 %}
-                    {% if 'placeholder' in sponsor.logo.url %}
-                    <p class="card-text">{{sponsor.name}}</p>
-                    {% else %}
-                    <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
-                    {% endif %}
+                {% if 'placeholder' in sponsor.logo.url %}
+                <p class="card-text">{{sponsor.name}}</p>
+                {% else %}
+                <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
                 {% endif %}
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
