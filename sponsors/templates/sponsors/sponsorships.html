@@ -2,8 +2,30 @@
 
 {% load static %}
 
+{% url 'sponsors' as sponsors_url %}
+{% url 'conference_info' as conference_info_url %}
+{% url 'contact_us' as contact_us_url %}
+
 {% block content %}
 
-<h1>Sponsorship</h1>
+<section id="intro-sponsorship"></section>
+
+<section id="benefits"></section>
+
+<section id="sponsorship-packages"></section>
+
+<section id="day-of-conference"></section>
+
+<section id="during-organization"></section>
+
+<section id="cta-buttons">
+    <div class="row">
+        <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
+            <a href="{% url 'sponsors' %}" class="btn btn-light cta-btn">ΧΟΡΗΓΟΙ</a>
+            <a href="{% url 'conference_info' %}" class="btn btn-light cta-btn">ΠΛΗΡΟΦΟΡΙΕΣ ΥΝΕΔΡΙΟΥ</a>
+            <a href="{% url 'contact_us' %}" class="btn btn-light cta-btn">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
