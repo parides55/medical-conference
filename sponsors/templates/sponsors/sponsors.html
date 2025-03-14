@@ -26,7 +26,6 @@
     </div>
 </section>
 
-
 <section id=platinum>
     <div class="container-fluid">
         <div class="row">
@@ -38,10 +37,20 @@
             {% for sponsor in sponsors %}
             {% if sponsor.status == 1 %}
             <div class="card sponsors-cards" style="width: 18rem;">
-                {% if 'placeholder' in sponsor.logo.url %}
-                <p class="card-text">{{sponsor.name}}</p>
+                {% if sponsor.url == '' %}
+                    {% if 'placeholder' in sponsor.logo.url %}
+                    <p class="card-text">{{sponsor.name}}</p>
+                    {% else %}
+                    <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                    {% endif %}
                 {% else %}
-                <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                    <a href="{{ sponsor.url }}" target="_blank">
+                        {% if 'placeholder' in sponsor.logo.url %}
+                        <p class="card-text">{{sponsor.name}}</p>
+                        {% else %}
+                        <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                        {% endif %}
+                    </a>
                 {% endif %}
             </div>
             {% endif %}
@@ -49,7 +58,6 @@
         </div>
     </div>
 </section>
-
 
 <section id=gold>
     <div class="container-fluid">
@@ -62,10 +70,20 @@
             {% for sponsor in sponsors %}
             {% if sponsor.status == 2 %}
             <div class="card sponsors-cards" style="width: 18rem;">
-                {% if 'placeholder' in sponsor.logo.url %}
-                <p class="card-text">{{sponsor.name}}</p>
+                {% if sponsor.url == '' %}
+                    {% if 'placeholder' in sponsor.logo.url %}
+                    <p class="card-text">{{sponsor.name}}</p>
+                    {% else %}
+                    <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                    {% endif %}
                 {% else %}
-                <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
+                    <a href="{{ sponsor.url }}" target="_blank">
+                        {% if 'placeholder' in sponsor.logo.url %}
+                        <p class="card-text">{{sponsor.name}}</p>
+                        {% else %}
+                        <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                        {% endif %}
+                    </a>
                 {% endif %}
             </div>
             {% endif %}
@@ -85,10 +103,20 @@
             {% for sponsor in sponsors %}
             {% if sponsor.status == 3 %}
             <div class="card sponsors-cards" style="width: 18rem;">
-                {% if 'placeholder' in sponsor.logo.url %}
-                <p class="card-text">{{sponsor.name}}</p>
+                {% if sponsor.url == '' %}
+                    {% if 'placeholder' in sponsor.logo.url %}
+                    <p class="card-text">{{sponsor.name}}</p>
+                    {% else %}
+                    <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                    {% endif %}
                 {% else %}
-                <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
+                    <a href="{{ sponsor.url }}" target="_blank">
+                        {% if 'placeholder' in sponsor.logo.url %}
+                        <p class="card-text">{{sponsor.name}}</p>
+                        {% else %}
+                        <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                        {% endif %}
+                    </a>
                 {% endif %}
             </div>
             {% endif %}
@@ -108,10 +136,20 @@
             {% for sponsor in sponsors %}
             {% if sponsor.status == 4 %}
             <div class="card sponsors-cards" style="width: 18rem;">
-                {% if 'placeholder' in sponsor.logo.url %}
-                <p class="card-text">{{sponsor.name}}</p>
+                {% if sponsor.url == '' %}
+                    {% if 'placeholder' in sponsor.logo.url %}
+                    <p class="card-text">{{sponsor.name}}</p>
+                    {% else %}
+                    <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                    {% endif %}
                 {% else %}
-                <img src="{{sponsor.logo.url}}" class="card-img-top" alt="{{sponsor.name}}">
+                    <a href="{{ sponsor.url }}" target="_blank">
+                        {% if 'placeholder' in sponsor.logo.url %}
+                        <p class="card-text">{{sponsor.name}}</p>
+                        {% else %}
+                        <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                        {% endif %}
+                    </a>
                 {% endif %}
             </div>
             {% endif %}
