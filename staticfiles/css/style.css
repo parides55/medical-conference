@@ -108,6 +108,12 @@ section {
 }
 
 /* -------------------------------- Contact Us styles --------------------------- */
+.sponsors-cards {
+    background-color: transparent;
+    border: none;
+}
+
+/* -------------------------------- Contact Us styles --------------------------- */
 #contact-us-row {
     height: 100vh;
 }
