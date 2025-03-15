@@ -3,7 +3,7 @@
 {% url 'conference_info' as conference_info_url %}
 {% url 'conference_schedule' as conference_schedule_url %}
 {% url 'speakers' as speakers_url %}
-{% url 'sponsors' as sponsors_url %}
+{% url 'sponsorships' as sponsorships_url %}
 {% url 'about_us' as about_us_url %}
 {% url 'home' as home_url %}
 {% url 'contact_us' as contact_us_url %}
@@ -71,7 +71,7 @@
                         <a class="nav-link {% if request.path == conference_schedule_url %}active" aria-current="page{% endif %}" href="{% url 'conference_schedule' %}">ΠΡΟΓΡΑΜΜΑ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == speakers_url %}active" aria-current="page{% endif %}" href="{% url 'speakers' %}">ΟΜΙΛΛΗΤΕΣ</a>
+                        <a class="nav-link {% if request.path == sponsorships_url %}active" aria-current="page{% endif %}" href="{% url 'sponsorships' %}">ΧΟΡΗΓΙΕΣ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == sponsors_url %}active" aria-current="page{% endif %}" href="{% url 'sponsors' %}">ΧΟΡΗΓΟΙ</a>
