@@ -10,7 +10,6 @@ def msg_from_president(request):
 
     try:
         messages = PresidentMessage.objects.filter(is_active=True)
-        print(messages)
     except PresidentMessage.DoesNotExist:
         messages = None
     
