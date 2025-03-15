@@ -20,9 +20,15 @@
 
 <section id="schedule">
     <div class="container-fluid">
-        <div class="row justify-content-center animate__animated animate__fadeInLeft animate__slower animate__delay-1s">
-            <div class="col-9">
-                <iframe src="{% static 'docs/ΠΡΟΓΡΑΜΜΑ.pdf' %}" type="application/pdf" width="100%" height="500px"></iframe>
+        <div class="row animate__animated animate__fadeInLeft animate__slower animate__delay-1s">
+            <div class="col text-center">
+                <canvas id="pdf-canvas" data-pdf="{% static 'docs/ΠΡΟΓΡΑΜΜΑ.pdf' %}"></canvas>
+                <!-- Navigation Controls -->
+                <div>
+                    <button id="prev-page">Previous</button>
+                    <span id="page-num">Page 1</span>
+                    <button id="next-page">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -42,4 +48,9 @@
 </section>
 
 
+{% endblock %}
+
+{% block forJS %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.10.111/pdf.min.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}

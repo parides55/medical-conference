@@ -181,6 +181,10 @@ section {
     #home-container {
         margin-top: 3rem;
     }
+
+    canvas {
+        margin: 0rem -1rem;
+    }
 }
 
 @media (max-width: 500px) {
