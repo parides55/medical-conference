@@ -20,7 +20,7 @@
 
 <section id="schedule">
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center animate__animated animate__fadeInLeft animate__slower animate__delay-1s">
             <div class="col-9">
                 <embed src="{% static 'docs/ΠΡΟΓΡΑΜΜΑ.pdf' %}" type="application/pdf" width="100%" height="500px"/>
             </div>
@@ -30,11 +30,16 @@
 
 
 <section id="cta-links">
-    <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
-        <a href="{% url 'sponsors' %}" class="btn btn-light cta-btn">ΧΟΡΗΓΟΙ ΚΑΙ ΥΠΟΣΤΗΡΙΚΤΕΣ</a>
-        <a href="https://registrations.oracleartvision.gr/registration-form-medical-conference-of-the-association-of-parents-friends-of-children-with-heart-disease/ " target=_blank class="btn btn-light cta-btn">ΕΓΓΡΑΦΗ ΣΤΟ ΣΥΝΕΔΡΙΟ</a>
-        <a href="{% url 'contact_us' %}" class="btn btn-light cta-btn">ΕΟΙΚΟΙΝΩΝΙΑ</a>
+    <div class="container">
+        <div class="row animate__animated animate__fadeInUp animate__slower animate__delay-1s">
+            <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
+                <a href="{% url 'sponsors' %}" class="btn btn-light cta-btn">ΧΟΡΗΓΟΙ ΚΑΙ ΥΠΟΣΤΗΡΙΚΤΕΣ</a>
+                <a href="https://registrations.oracleartvision.gr/registration-form-medical-conference-of-the-association-of-parents-friends-of-children-with-heart-disease/ " target=_blank class="btn btn-light cta-btn">ΕΓΓΡΑΦΗ ΣΤΟ ΣΥΝΕΔΡΙΟ</a>
+                <a href="{% url 'contact_us' %}" class="btn btn-light cta-btn">ΕΟΙΚΟΙΝΩΝΙΑ</a>
+            </div>
+        </div>
     </div>
 </section>
+
 
 {% endblock %}
