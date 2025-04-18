@@ -9,6 +9,7 @@ class Sponsor(models.Model):
         (2, 'Gold'),
         (3, 'Silver'),
         (4, 'Other'),
+        (5, 'Communication')
     )
     
     name = models.CharField(max_length=200)

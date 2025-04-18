@@ -158,6 +158,39 @@
     </div>
 </section>
 
+<section id=communication_sponsor>
+    <div class="container-fluid animate__animated animate__fadeInLeft animate__slower animate__delay-1s">
+        <div class="row">
+            <div class="col text-center">
+                <h3>Χορηγός Επικοινωνίας</h3>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            {% for sponsor in sponsors %}
+            {% if sponsor.status == 5 %}
+            <div class="card sponsors-cards" style="width: 18rem;">
+                {% if sponsor.url == '' %}
+                    {% if 'placeholder' in sponsor.logo.url %}
+                    <p class="card-text">{{sponsor.name}}</p>
+                    {% else %}
+                    <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                    {% endif %}
+                {% else %}
+                    <a href="{{ sponsor.url }}" target="_blank">
+                        {% if 'placeholder' in sponsor.logo.url %}
+                        <p class="card-text">{{sponsor.name}}</p>
+                        {% else %}
+                        <img src="{{ sponsor.logo.url }}" class="card-img-top" alt="{{sponsor.name}}">
+                        {% endif %}
+                    </a>
+                {% endif %}
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <section id=cta-buttons>
     <div class="row animate__animated animate__fadeInUp animate__slower animate__delay-1s">
         <div class="col d-flex flex-column align-items-center flex-md-row justify-content-around my-5">
